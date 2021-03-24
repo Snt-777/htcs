@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>aprendendo html-Negrito, Itálico, mark e etc...</title>
+</head>
+<body>
+    <a href="../index.html" hreflang="pt-br" target="_self" rel="prev"><button class="home"><img src="../home.png" alt="home"></button></a>
+    <div>
+        <hr style="border-color: orangered;">
+        <h1><strong>Negrito</strong><em> Itálico </em><mark>Mark</mark><br> ETC...</h1>
+        <hr style="border-color: blue;">
+        <h2>Como colocar diferenças no texto</h2>
+        <hr style="border-color: yellow;">
+    </div>
+    <p>
+        Vou passar aqui algumas tags utilizadas para modificar o texto, bem simples de colocar mas como são muitas acaba que esquecemos como utilizar. Temos algumas tags não semânticas, porém não vou passar elas com explicações porque usamos em geral as tags semânticas.
+    </p>
+    <ul>
+        <li>Negrito</li>
+        <ul type="square">
+            <li><code>&lt;b&gt;</code> &rarr; negrito não semântico</li>
+            <li><code>&lt;strong&gt;</code> &rarr; negrito da forma semântica (texto em destaque)</li>
+        </ul>
+        <li>Itálico</li>
+        <ul type="square">
+            <li><code>&lt;i&gt;</code> &rarr; itálico não semântico</li>
+            <li><code>&lt;em&gt;</code> &rarr; itálico da forma semântica</li>
+        </ul>
+    </ul>
+    <h3>Mark:</h3>
+    <p>O mark eu irei explicar a parte, porque ele é uma tag simples porém com umas observações.</p>
+    <hr>
+    <mark style="background-color: red;">texto</mark>
+    <hr>
+    <div>
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/tuto-mark-p.png" type="image/png">
+            <img src="imagens/tuto-mark-m.png" alt="mark style">
+        </picture>
+    </div>
+    <ol type="A">
+        <li><code>&lt;mark&gt;</code> &rarr; tag mark(texto importânte)</li>
+        <li><code>style="..."</code> &rarr; parâmetro style(css) onde será você irá passar o estilo que você vai querer, neste caso eu usei o style na tag, mas você pode utilizar no head para efeitos gerais.</li>
+        <li><code>texto</code> &rarr; a mensagem que será marcada</li>
+    </ol>
+    <h3><big>texto grande</big> e <small>texto pequeno</small>:</h3>
+    <p>
+        tag simples:
+        <ul>
+            <li><code>&lt;big&gt;</code> &rarr; deixa o texto grande(é uma tag que está funcionando porém se tornou obsoleta, ou seja, provavelmente daqui a algumas versões não será mais aceita).</li>
+            <li><code>&lt;small&gt;</code> &rarr; deixa o texto pequeno(ainda é utilizada não se tornou obsoleta ainda).</li>
+        </ul>
+    </p>
+    <h3>texto deletado e inserido</h3>
+    <p>
+        <del>html é linguagem de programação</del> &rarr; <ins>html é linguagem de marcação</ins>
+    </p>
+    <ul>
+        <li><code>&lt;del&gt;</code> &rarr; texto deletado(pode ser lido mas não deve ser considerado)</li>
+        <li><code>&lt;ins&gt;</code> &rarr; texto inserido(texto colocado "depois")</li>
+    </ul>
+    <h3>texto sobrescrito e subscrito:</h3>
+    <p>
+        x<sup>20</sup> + 3 <br>
+        H<sub>2</sub>O
+    </p>
+    <ul>
+        <li><code>&lt;sup&gt;</code> &rarr; texto sobrescrito(elevado)</li>
+        <li><code>&lt;sub&gt;</code> &rarr; texto subscrito(embaixo da "linha")</li>
+    </ul>
+    <hr>
+    <h3>código-fonte/pré-formatação:</h3>
+    <p>
+        Esses dois vou ter que dar uma breve explicada, o código fonte que é a tag <code>&lt;code&gt;</code> nada mais é um espaçamento, ou seja ele deixa as palavras com a mesma espessura para que fique mais fácil de ler o "código".<br> Já a pré-formatação que é a tag <code>&lt;pre&gt;</code> basicamente é para que o que o desenvolvedor digitou no código da página fique ordenado da forma que ele digitou ou seja contar os espaços quebras de linhas e etc... Isso é geralmente utilizado para escrever trechos de códigos em uma página web.
+    </p>
+    <hr>
+    <pre>
+        <code>
+            n1 = input('digite sua nota:')
+            if n1 &gt; 7:
+                print('aprovado!')
+            else:
+                print('reprovado!')
+        </code>
+    </pre>
+    <hr>
+    <div>
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/tuto-code-pre-p.png" type="image/png">
+            <img src="imagens/tuto-code-pre-m.png" alt="pre e code marcações">
+        </picture>
+    </div>
+    <ol type="A">
+        <li><code>&lt;pre&gt;</code> &rarr; tag de pré-formatação</li>
+        <li><code>&lt;code&gt;</code> &rarr; tag de espaçamento</li>
+        <li><code>código</code> &rarr; o código em si escrito da mesma forma que apareceu na tela</li>
+    </ol>
+    <p>usando isso tudo junto se faz o resultado logo acima da imagem, se você não quiser esses espaços da borda da tela basta colocar tudo coladinha na borda da linha.</p>
+    <hr>
+    <h3>Citações simples:</h3>
+    <p>Como dizia meu pai, <q>o computador é um burro muito rápido</q>.<br><br> Neste trecho acima é utilizado a tag <code>&lt;q&gt;</code>, eu sei que simplesmente podemos colocar as aspas normalmente, porém as tags de citação não são utilizadas para enfeite, mas sim para mostrar ao algoritimo que aquilo é uma citação.</p>
+    <h3>Citações completas:</h3>
+    <p>Segundo Albert Einstein</p>
+    <blockquote cite="Albert Einstein">Espíritos grandiosos sempre encontraram oposição violenta de mentes medíocrs.</blockquote> <br> <br>
+    <p>Está é a citação completa, é bem simples de usar. Coloque um parágrafo com o nome da pessoa e em baixo crie uma tag com fechamento chamada <code>&lt;blockquote&gt;</code>  e escreva a frase dentro, simples.</p>
+    <hr>
+    <h3>Abreviações:</h3>
+    <p><abbr title="hyper text markup linguage">HTML</abbr></p>
+    <p>Bem simples também, basta colocar a tag com fechamento <code>&lt;abbr title="..."&gt;</code>. No <code>title="..."</code> você irá colocar o significado da abreviação e antes do fechamento irá colocar a palavra abreviada.</p>
+    <hr>
+</body>
+</html>
