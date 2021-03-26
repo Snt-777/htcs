@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>aprendendo html-âncoras</title>
+</head>
+<body>
+    <a href="../pagina-ini-htmlcss.html" hreflang="pt-br" rel="prev"><button class="home"><img src="../home.png" alt="home"></button></a>
+    <hr style="border-color: orangered;">
+    <h1 style="text-align: center;">Âncoras</h1>
+    <hr style="border-color: blue;">
+    <h2 style="text-align: center;">Como utilizar âncoras externas e internas</h2>
+    <hr style="border-color: yellow;">
+    <p>Âncoras são bem simples de serem usadas porém tem alguns detalhes que temos que observar sobre elas, eu irei explicar esse detalhes logo a seguir.</p>
+    <h3>Âncoras externas:</h3>
+    <p>Olá sou o ian, logo abaixo estarei disponibilizando meu perfil no github, segue lá!</p>
+    <a href="https://github.com/Snt-777" hreflang="en" target="_blank" rel="external">perfil github</a>
+    <hr>
+    <div>
+        <picture>
+            <source media="(max-width: 550px)" srcset="imagens/cod-links-exter-p.png" type="image/png">
+            <img src="imagens/cod-links-exter-m.png" alt="ancoras externos">
+        </picture>
+    </div>
+    <ol type="A">
+        <li><code>&lt;a&gt;</code> &rarr; Essa é a tag de âncora, o link que irá aperecer na tela vem antes do fechamento da tag</li>
+        <li><code>href="..."</code> &rarr; Esse parâmetro é a referência do link, ou seja o que estiver dentro dele vai ser para onde o link irá levar a gente, nesse caso seriamos redirecionados para o meu perfil no git hub. Para pegar um link externo é bem simples basta acessar a página que você deseja colocar como link e copiar a <strong>URL</strong> da página</li>
+        <li><code>hreflang="..."</code> &rarr; Essa é a lingua do site que você está redirecionando o usuário, ela irá ajudar o mecanismo de busca a saber se é para traduzir ou não.</li>
+        <li><code>target="..."</code> &rarr; Esse é bem importante, o parâmetro target irá definir como será aberto o link, no caso está blank porque como é uma página fora do meu site, ele irá abrir em uma nova guia e não irá fechar meu site, assim se o usuário quiser voltar para o meu site ainda estará aberto lá (vou dar mais detalhes sobre os targets na parte: os tipos de target)</li>
+        <li><code>rel="..."</code> &rarr; Esse é o parâmetro rel, ele irá ajudar o mecanismo de busca a saber se o link irá para uma página externa ou interna do seu site, neste caso é externa logo o valor de rel será <code>external</code></li>
+    </ol>
+    <hr>
+    <div><img src="../../pgdesenvolvimeto.png" alt="desenvolvimento"></div>
+    <h1 class="cent">Página em desenvolvimento</h1>
+    <p class="cent">A continuação da página está em desenvolvimento</p>
+    <p class="cent">Volte novamente mais tarde.</p>
+</body>
+</html>

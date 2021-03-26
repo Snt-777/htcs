@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>aprendendo html-imagens</title>
+</head>
+<body>
+    <a href="../pagina-ini-htmlcss.html" target="_self" rel="prev"><button class="home"><img src="../home.png" alt="home"></button></a>
+    <hr style="border-color: orangered;">
+    <h1 style="text-align: center;">imagens</h1>
+    <hr style="border-color: blue;">
+    <h2 style="text-align: center;">como colocar imagens no site</h2>
+    <hr style="border-color: yellow;">
+    <p>Colocar imagens no site é bem simples, mas tem coisas que devemos deixar bem claras aqui:</p>
+    <ol>
+        <li>reduzir a imagem <strong>no código</strong> html não ira reduzir seu peso na memória</li>
+        <li>quanto maior a imagem mais pesada ela é.</li>
+        <li>imagens muito pesadas deixam o site lento em sites lentos fazem com que o algoritimo de busca não indique ele.</li>
+    </ol>
+    <p>
+        Deixando isso tudo bem claro, aqui abaixo ensino como por imagens em um site:
+    </p>
+    <hr>
+    <div><br><img src="imagens/html-logo.png" alt="logo-html"></div>
+    <hr>
+    <div style="background-color: black;">
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/tuto-imagens-p.png" type="image/png">
+            <img src="imagens/tuto-imagens.png" alt="imagem como por imagem">
+        </picture>
+    </div>
+    <hr>
+    <ol type="A">
+        <li><code>&lt;img&gt;</code> Tag utilizada para por a imagem no site</li>
+        <li><code>src="(documento)"</code> Parâmetro onde é guardado o documento da imagem</li>
+        <li><code>alt="(descrição)"</code> Parâmetro onde é salvo a descrição(significado) da imagem</li>
+    </ol>
+    <hr>
+    <p style="text-align: center;"><strong>obs: é importante por frases que realmente descrevam as imagens para a inclusão de cegos,<br>o leitor de tela irá lêr o significado da imagem, isso também ajuda o site a ser recomendado</strong></p>
+</body>
+</html>
