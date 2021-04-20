@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Html-Imagens</title>
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Html</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div>
+    <h2 id="titu">Imagens</h2>
+    <section>
+        <p>Colocar imagens no site é bem simples, mas tem coisas que devemos deixar bem claras aqui:</p>
+    <ol>
+        <li>reduzir a imagem <strong>no código</strong> html não ira reduzir seu peso na memória</li>
+        <li>quanto maior a imagem mais pesada ela é.</li>
+        <li>imagens muito pesadas deixam o site lento em sites lentos fazem com que o algoritimo de busca não indique ele.</li>
+    </ol>
+    <p>
+        Deixando isso tudo bem claro, aqui abaixo ensino como por imagens em um site:
+    </p>
+    <hr>
+    <div id="cent"><br><img src="imagens/html-logo.png" alt="logo-html"></div>
+    <hr>
+        <div id="cent">
+            <picture>
+                <source media="(max-width: 830px)" srcset="imagens/tuto-imagens-p.png" type="image/png">
+                <img src="imagens/tuto-imagens.png" alt="imagem como por imagem">
+            </picture>
+        </div>
+        <hr>
+        <ol type="A">
+        <li><code>&lt;img&gt;</code> Tag utilizada para por a imagem no site</li>
+        <li><code>src="(documento)"</code> Parâmetro onde é guardado o documento da imagem</li>
+        <li><code>alt="(descrição)"</code> Parâmetro onde é salvo a descrição(significado) da imagem</li>
+        </ol>
+        <hr>
+        <p style="text-align: center;"><strong>obs: é importante por frases que realmente descrevam as imagens para a inclusão de cegos,<br>o leitor de tela irá lêr o significado da imagem, isso também ajuda o site a ser recomendado</strong></p>
+    </section>
+    <footer></footer>
+</body>
+</html>
