@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Html-Listas</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Html</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div> 
+    <h2 id="titu">Listas</h2>
+    <section>
+        <p>Nós temos dois tipos de listas, as listas ordenadas e as desordenadas.</p>
+    <h3>Lista ordenada:</h3>
+
+    <p>Meus jogos favoritos:</p>
+    <ol type="1">
+        <li>Rocket league</li>
+        <li>Destiny 2</li>
+        <li>Roblox</li>
+        <li>Mario</li>
+        <li>Sonic</li>
+        <li>Cs go</li>
+    </ol>
+    <hr>
+    <div id="cent">
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/cod-lista-ol-p.png" type="image/png">
+            <img src="imagens/cod-lista-ol-m.png" alt="código lista">
+        </picture>
+    </div>
+    <ol type="A">
+        <li><code>&lt;p&gt;</code> &rarr; Neste caso eu estou utilizando a tag <code>&lt;p&gt;</code> para apenas falar sobre o significado da lista, basicamente dar uma explicação ao usuário</li>
+        <li><code>&lt;ol&gt;</code> &rarr; Essa tag é a lista ordenada, dentro dela é onde você coloca os itens.</li>
+        <li><code>type="..."</code> &rarr; Este é um parâmetro utilizado nas listas em geral, ele serve no caso da lista ordenada para indicar de qual forma ela será ordenada.<br>Dentre elas temos:</li>
+        <ul type="disc">
+            <li><code>1</code> &rarr; Este já esta indicado por padrão nas listas ordenadas, mas serve para mostrar ordenadamente em números</li>
+            <li><code>A</code> &rarr; Este serve para mostrar ordenado em letras maiúsculas</li>
+            <li><code>a</code> &rarr; Este serve para mostrar ordenado em letras minúsculas</li>
+            <li><code>I</code> &rarr; Este serve para mostrar ordenado em números romanos maiúsculos</li>
+            <li><code>i</code> &rarr; Este serve para mostrar ordenado em números romanos minúsculos</li>
+        </ul>
+        <li><code>&lt;li&gt;</code> &rarr; É utilizado para indicar um item da lista.</li>
+    </ol>
+    <p class="cent">(Obs: Bom não sei se você percebeu, mas utilizei lista desordenada e utilizei lista dentro de lista na lista acima.)</p>
+    <hr>
+    <h3>Lista desordenada:</h3>
+
+    <p>Atividades perfeitas para dias chuvosos</p>
+    <ul type="square">
+        <li>Desenvolver sites</li>
+        <li>Ler um livro</li>
+        <li>Criar uma história</li>
+        <li>Jogar</li>
+        <li>Estudar algo que goste</li>
+    </ul>
+    <hr>
+    <div id="cent">
+        <picture>
+            <source media="(max-width: 680px)" srcset="imagens/cod-lista-ul-p.png" type="image/png">
+            <img src="imagens/cod-lista-ul-m.png" alt="código lista ul">
+        </picture>
+    </div>
+    <ol type="A">
+        <li><code>&lt;ul&gt;</code> &rarr; tag de lista desordenada</li>
+        <li><code>type="..."</code> &rarr; Este é um parâmetro das listas en geral, no caso da lista desordenada, ele serve apenas para modificar o ícone que aparece no lado. <br> Nele temos:</li>
+        <ul type="disc">
+            <li><code>none</code> &rarr; Para não aparecer ícone</li>
+            <li><code>disc</code> &rarr; Para aparecer um circulo fechado</li>
+            <li><code>circle</code> &rarr; Para aparecer um circulo com um buraco no meio</li>
+            <li><code>square</code> &rarr; Para aparecer um quadrado</li>   
+        </ul>
+        <li><code>&lt;li&gt;</code> &rarr; como eu disse anteriormente, serve para indicar um item da lista.</li>
+    </ol>
+    </section>
+    <section>
+    <h3>Lista de definições:</h3>
+    <dl>
+        <dt>HTML5</dt>
+        <dd>Linguagem de marcação para criar sites</dd>
+        
+        <dt>CSS3</dt>
+        <dd>Linguagem de estilo para sites</dd>
+        
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para sites</dd>
+    </dl>
+    <hr>
+    <div id="cent">
+        <picture>
+            <source media="(max-width: 880px)" srcset="imagens/cod-lista-def-p.png" type="image/png">
+            <img src="imagens/cod-lista-def-m.png" alt="código lista definições">
+        </picture>
+    </div>
+    <ol type="A">
+        <li><code>&lt;dl&gt;</code> &rarr; tag que irá determinar a lista.</li>
+        <li><code>&lt;dt&gt;</code> &rarr; tag que irá determinar o item da lista.</li>
+        <li><code>&lt;dd&gt;</code> &rarr; tag que irá determinar a descrição do item.</li>
+    </ol>
+    <p class="cent">(Obs: Eu coloquei espaços entre os conjuntos de item e descrição para ficar mais fácil de visualizar)</p>
+    </section>
+    <section>
+    <h3>Mesclando listas:</h3>
+    <p>Isto é uma coisa bem simples, basta utilizar uma lista dentro da outra, porém isso pode parecer confuso as vezes, então neste caso irei mostrar como mesclar.</p>
+    <p>O pódio:</p>
+    <ol>
+        <li>Marcelo</li>
+        <ul>
+            <li>pontos: 99,3</li>
+        </ul>
+        <li>Júlia</li>
+        <ul>
+            <li>pontos: 99,1</li>
+        </ul>
+        <li>Jorge</li>
+        <ul>
+            <li>pontos: 98,8</li>
+        </ul>
+    </ol>
+    <hr>
+    <div id="cent">
+        <img src="imagens/cod-lista-mesc-p.png" alt="código lista mesclada">
+    </div>
+    <ol type="A">
+        <li><code>&lt;p&gt;</code> &rarr; Novamente utilizando esse parágrafo para mostrar ao usuário o significado da lista</li>
+        <li><code>&lt;ol&gt;</code> &rarr; Aqui podemos ver a abertura da lista ordenada</li>
+        <li><code>&lt;li&gt;</code> &rarr; Isso é um item da lista ordenada aberta logo acima</li>
+        <li><code>&lt;ul&gt;</code> &rarr; Está é a abertura da lista desordenada</li>
+        <li><code>&lt;li&gt;</code> &rarr; Aqui podemos ver um item da lista desordenada</li>
+    </ol>
+    <h4>Explicação:</h4>
+    <p>Eu sei que ficou bem confuso por isso irei explicar. Vou começar do início e ir descendo, a tag <code>&lt;p&gt;</code> está sendo apenas usada para falar ao usuário o significado da lista, logo abaixo temos a abertura da lista com a tag <code>&lt;ol&gt;</code> (se você conferir essa tag de abertura inicial da lista ordenada só se fecha lá no final) logo abaixo da tag inicial da lista temos um item e abaixo deste item um lista desordenada a tag <code>&lt;ul&gt;</code> essa lista desordenada tem um item dentro dela e logo após ela fecha, e vem denovo um item da ordenada, abre desordenada, item da desordenada, e vai assim por diante, porém a única coisa que você tem que ter em mente é que a lista desordenada está dentro da lista ordenada, ou seja pela regra da hierarquia, a lista desordenada pertence a ordenada logo o item que está dentro da desordenada está seguindo essa hierarquia também, ordenada > desordenada > item, por isso funciona.</p>
+    </section>
+    <footer></footer>
+</body>
+</html>
