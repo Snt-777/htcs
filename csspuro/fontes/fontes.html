@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Css-Fontes em css</title>
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Css</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div>
+    <h2 id="titu">Fontes em Css3</h2>
+    <section>
+        <p> Aqui eu não irei mencionar tipografia, eu irei apenas mostrar como utilizar fontes externas e internas 
+        </p>
+        <h3>Fontes externas:</h3>
+        <p style="font-size: 50px; text-align: center;font-family: 'Zen Tokyo Zoo', cursive;"><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+        <p>O google fonts é um site que nós utilizamos para pegar fontes sem precisar baixar, assim como um vídeo de youtube, nós conseguimos incorporar essas fontes em nosso site. <br>&nbsp; Para incorporar essas fontes é bem simples, mas para ficar mais simples ainda irei exemplificar com fotos:</p>
+        <ol><li>Abra o google fonts e escolha a fonte que queira usar</li>
+           
+            <li>Logo em seguida aperte neste botão &darr;</li>
+            <div id="cent">
+                    <img src="imagens/selectgooglefonts-M.png" alt="código lista">
+            </div>
+           
+            <li>Caso uma janela não aparecer, aperte neste ícone localizado no canto superior direito da tela &darr;</li>
+            <div id="cent">
+                <img src="imagens/passo2.png" alt="passo2">
+            </div>
+           
+            <li>Assim que a janela abrir, escolha a opção "import" e copie o a parte do texto destacada &darr;</li>
+            <div id="cent">
+                <img src="imagens/passo3.png" alt="passo3">
+            </div>
+           
+            <li>Agora na parte do seu código css, apenas cole no início do código(obs: não coloque dentro de nenhuma chave, apenas cole no início) &darr;</li>
+            <div id="cent">
+                <img src="imagens/passo4.png" alt="passo4">
+            </div>
+            
+            <li>Agora que você colou o @import basta copiar o font family e utilizar em seu código &darr;</li>
+            <div id="cent">
+                <img src="imagens/passo5.png" alt="passo5"> <br>
+                <img src="imagens/passo6.png" alt="passo6">
+                <p>o resultado disso foi o link <strong style="font-family: 'Zen Tokyo Zoo', cursive;">Google Fonts</strong> lá no topo da página.</p>
+            </div>
+        </ol>
+    </section>
+    <section>
+        <h3>Fontes internas:</h3>
+        <p style="font-size: 25px; text-align: center;font-family: 'Pressstart';"><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+        <p>As fontes internas são basicamente caso o seu cliente queira colocar uma fonte em expecífico que não tenha(meio improvável) no google fonts, ou também pode ser que a fonte seja paga, e o cliente comprou ela.</p>
+        <p>As fontes internas são divididas em 2 tipos de arquivos, <strong>otf & ttf</strong>(também tem outros tipos, mas para o que precisamos estes estão bons). <br> &nbsp; Em si, colocar fontes internas dá um pouco mais de trabalho, já que você precisa baixar a fonte e utilizar um comando em expecífico no Css</p>
+        <p>Neste caso vamos utilizar o google fonts como auxilio, nele tem como baixar as fontes também.</p>
+        <p><strong>OBS:</strong> lembre-se de apertar na tecla remove all antes de continuar escolhendo fontes caso você queira apenas uma, porque se não você irá importar várias fontes juntas</p>
+        <ol>
+            <li>primeiro de tudo escolha a fonte no qual irá utilizar.</li>
+            
+            <li>faça o mesmo procedimento que você fez nas fontes externas, porém não faça o passo 4 em diante, neste caso ao invés de copiar iremos baixar.</li>
+            
+            <li>aperte no botão de download all &darr;</li><div id="cent"><img src="imagens/passo1interno.png" alt="passo 1 fonte interna"></div>
+            
+            <li>Assim que apertar em baixar, irá baixar um zip, abra ele &darr;</li><ul type="disc"><li>Assim que você abrir esse zip, dependendo da fonte que você escolher vai ter ttf, otf ou até mesmo os dois tipos de arquivo, o ideal é que tenha os dois, mas em questão de fonte a "maioria" dos navegadores são compatíveis, mas quanto mais compatibilidade melhor.</li></ul><div id="cent"><img style="border: 2px solid black;" src="imagens/passo2interno.png" alt="passo 2 interno"></div>        
+            
+            <li>Crie uma pasta(o nome da qual eu criei é fonts) dentro da pasta onde está o site, assim você tem uma organização melhor dos documentos e não faz uma bagunça depois. <br> Copie e cole o documento de dentro do zip, para a pasta que você criou.</li> <div id="cent" ><img style="border: 2px solid black;" src="imagens/passo3interno.png" alt="passo 3 interno"></div>
+            
+            <li>agora que chega a parte um pouco complicada, para você fazer a fonte funcinar você precisa utilizar o comando <strong>@font-face{}</strong>. Eu irei colocar uma print na tela e explicar todos os parâmetros dentro dele:</li>
+            <div id="cent">
+                <picture>
+                    <source media="(max-width: 610px)" srcset="imagens/passo4interno.png" type="image/png">
+                    <img src="imagens/passo4internoG.png" alt="passo 4 interno">
+                </picture>
+            </div>
+                <ol type="A">
+                    <li>O font-family neste caso você pode escolher, mas lembre-se não vá colocar algo aleatório, de preferencia coloque algo no qual irá se lembrar, como o próprio nome da fonte</li>
+                    <li>Este é o verdadeiro nome do arquivo da fonte, eu dividi essa explicação em duas partes</li>
+                    <li>Esse é basicamente o caminho percorrido para chegar na minha fonte, como este site está todo interligado, eu aproveitei para salvar essa fonte no meu style principal para caso eu queria utilizar ela novamente, obviamente este não é o ideal de se fazer, mas eu quis fazer assim porque queria deixar a fonte que utilizei no arquivo da pagina fontes.</li>
+                    <li>Este é o peso da fonte, nesse caos eu coloquei normal, mas dependendo da fonte tem outros(lighter, bold, bolder, etc...) isso intervere na espessura da fonte</li>
+                    <li>Como o próprio nome diz, esse é o estilo da fonte(negrito, italico, etc...)</li>
+                    <li>Esse é o tipo da fonte, no caso ele ttf, mas lembrando <strong>ttf = truetype & otf = opentype</strong></li>
+                </ol>
+        </ol> 
+        <p>Em questão de fontes internas e externas é basicamente isso, não irei entrar em detalhe na parte de shorthands, pesos, style, como utilizar eles e etc... eu irei entrar em detalhes e explicar eles em uma página dedicada somente para eles, caso esteja interssado neste assunto <strong><a href="../shorthands/manipulandofonts.html">aperte aqui </a></strong></p>
+    </section>
+</body>
+</html>

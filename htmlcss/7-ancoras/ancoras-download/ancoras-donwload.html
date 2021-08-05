@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <title>aprendendo html-Âncoras download</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="shortcut icon" href="../../../fav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Html</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../../index.html"><button id="home">Home</button></a>
+    </div>
+    <h2 id="titu">Âncoras para download</h2>
+   <section>
+    <p>Para utilizar o download com âncoras é basicamente a mesma coisa de usar elas para acessar sites, mas tem algumas modificações que devemos levar em conta.</p>
+    <h3>download:</h3>
+    <p>Mensagem motivacional, aperte no link abaixo para baixar a mensagem motivacional:</p>
+    <a href="mensagem-motivacional.zip" download="mensagem-motivacional.zip" type="application/zip">download</a>
+    <hr>
+    <div id="cent">
+        <picture>
+            <source media="(max-width: 632px)" srcset="imagens/cod-link-download-p.png" type="image/png">
+            <img src="imagens/cod-link-download-m.png" alt="codigo link download">
+        </picture>
+    </div>
+    <ol type="A"> 
+        <li><code>href="(documento download)"</code> &rarr; Eu já expliquei href, mas neste caso nós não colocamos um link de um site ou página, mas sim o arquivo que queremos que seja baixado(neste caso utilizei o arquivo zip porque apenas de apertar já baixa, dependendo do arquivo não baixa com o click).</li>
+        <li><code>download="..."</code> &rarr; No parâmetro download colocamos exatamente o mesmo nome de arquivo para indicar se será baixado</li>
+        <li><code>type="..."</code> &rarr; Ai que começa as variações, no type nós colocamos o tipo de documento que será baixado. Aqui abaixo vai uma lista com os principais:</li>
+        <ul type="disc">
+            <li>application/zip</li>
+            <li>application/pdf</li>
+            <li>text/html</li>
+            <li>text/css</li>
+            <li>text/javascript</li>
+            <li>video/mp4</li>
+            <li>video/H264</li>
+            <li>video/JPEG</li>
+            <li>audio/aac</li>
+            <li>audio/mpeg</li>
+            <li>font/ttf</li>
+            <li>image/jpeg</li>
+            <li>image/png</li>
+        </ul>
+    </ol>
+    <p>Existe bem mais types, eu coloquei apenas os principais, se caso algum dia você quiser saber ou precisar <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" hreflang="en" target="_blank" rel="external">aperte aqui</a> para ir a um site que mostra todos os media types.
+    </p>
+  </section>
+  <footer></footer>
+</body>
+</html>

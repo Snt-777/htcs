@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Css-Manipulando fontes</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Css</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div> 
+    <h2 id="titu">Manipulando a fonte</h2>
+    <section>
+        <h3>Peso da fonte:</h3>
+        <p>Peso da fonte é o que determina a espessura da fonte.</p><p>Temos vários níveis de espessura, vou listar eles:</p>
+        <ul>
+            <li>100 – Thin</li>
+            <li>200 – Extra Light (Ultra Light)</li>
+            <li>300 – Light</li>
+            <li>400 – Normal</li>
+            <li>500 – Medium</li>
+            <li>600 – Semi Bold (Demi Bold)</li>
+            <li>700 – Bold</li>
+            <li>800 – Extra Bold (Ultra Bold)</li>
+            <li>900 – Black (Heavy)</li>
+            </ul>
+        <h4>Como utilizar os pesos na fonte:</h4>
+        <p>Para utilizar o peso nas fontes nós precisamos utilizar a tag <strong>font-weight: ... ;</strong> No lugar dessas reticências você deve colocar o peso, no caso o número entre 100 - 900, isso irá determinar a expessura que você queira.</p>
+        <p style="text-align: center;"><strong>OBS:</strong> nem todas as fontes tem peso</p>
+        <hr>
+        <h3>Tamanho da fonte:</h3>
+        <p>Isso é bem importante, caso você não saiba as tags h1, h2, h3, etc... São utilizadas como <strong>título</strong>, elas nunca devem ser utilizadas para aumentar o tamanho da fonte, para isso nós temos a tag <strong>font-size: ...;</strong></p>
+        <h4>Como utilizar:</h4>
+        <p>Para utilizar o font-size é bem simples, mas temos algumas medidas que devemos saber, vou listar elas:</p>
+        <h5>Medidas absolutas:</h5>
+        <ul>
+            <li>cm → centímetro</li>
+            <li>mm → milímetro</li>
+            <li>in → polegada</li>
+            <li>px → pixel</li>
+            <li>pt → ponto</li>
+            <li>pc → paica</li>
+        </ul>
+        <h5>Medidas relativas:</h5>
+        <ul>
+            <li>em → tamanho altura M</li>
+            <li>ex → tamanho altura X</li>
+            <li>rem → tamanho do M da fonte definida no body</li>
+            <li>vw → largura da tela</li>
+            <li>vh → altura tamanho da tela</li>
+            <li>% → porcetagem</li>
+        </ul>
+        <p style="text-align: center;"><strong>OBS:</strong> recomenda-se o uso do <strong>px e em</strong> nas medidas(eu irei trabalhar apenas com o dois).</p>
+        <p>O <strong>px</strong> é basicamente pixel, o <strong>em</strong> é equivalente a 16px(que geralmente é o tamanho normal da fonte em um site), eu gosto de usar <strong>em</strong> porque você se baseia no tamanho comum da fonte.
+        </p>
+        <hr>
+        <h3>font-style:</h3>
+        o font-style é basicamente negrito, italico e etc... <p style="text-align: center;"><strong>OBS:</strong> nem todas as fontes tem style</p>
+        <hr>
+        <h3>Shorthands:</h3>
+        <p>O shorthands é basicamente um facilitador, porque se você for digitar: font-family, font-style, font, font-weight e etc... Fica muito grande e da trabalho demais, então para solucionar isso foi feito o shorthands</p>
+        <h4>Como utilizar:</h4>
+        <p>Para utilizar o shorthands precisamos seguir a seguinte lógica:</p><p>font-style → font-weigth → font-size → font-family</p><p>Então é basicamente isso, ai basta colocar as coisas normalmente utilizando a tag <strong>font: ... ... ... ... ;</strong></p>
+        <p><strong>Ex:</strong> font: italic bolder 2em 'Work Sans', 'sans-serif'</p>
+    </section>
+</body>
+</html>

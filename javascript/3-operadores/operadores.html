@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript-Operadores</title>
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo JavaScript</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div>
+    <h2 id="titu">Operadores</h2>
+    <section>
+        <h3>Operadores aritiméticos:</h3>
+    <ul>
+        <li><code>+</code> &rarr; Soma</li>
+        <li><code>-</code> &rarr; Subtração</li>
+        <li><code>*</code> &rarr; Multiplicação</li>
+        <li><code>/</code> &rarr; Divisão</li>
+        <li><code>%</code> &rarr; Resto da divisão</li>
+        <li><code>**</code> &rarr; Potência</li>
+        <li><code>()</code> &rarr; Parênteses, basicamente serve para indicar o que resolver primeiro</li>
+    </ul>
+    <h4>Ordem de precedência:</h4>
+    <ol>
+        <li><code>()</code></li>
+        <li><code>**</code></li>
+        <li><code>* / %</code></li>
+        <li><code>+ -</code></li>
+    </ol>
+    <p>obs: <br> adicionar 1 &rarr; x ++ <br> remover 1 &rarr; x --</p>
+    <h3>Operadores relacionais:</h3>
+    <ul>
+        <li><code>&gt;</code> &rarr; Maior que</li>
+        <li><code>&lt;</code> &rarr; Menor que</li>
+        <li><code>&gt;=</code> &rarr; Maior que ou igual</li>
+        <li><code>&lt;=</code> &rarr; Menor que ou igual</li>
+        <li><code>==</code> &rarr; igual</li>
+        <li><code>!=</code> &rarr; diferente</li>
+    </ul>
+    <h4>Operador de identidade:</h4>
+    <div id="cent">
+        <img src="imagens/operador-identidade.png" alt="operador identidade">
+    </div>
+    <ol type="A">
+        <li><code>10</code> &rarr; Number</li>
+        <li><code>'10'</code> &rarr; String</li>
+        <li><code>==</code> &rarr; Igual</li>
+        <li><code>===</code> &rarr; Operador de identidade</li>
+    </ol>
+    <p>A diferença entre os dois é bem simples, basicamente o <code>==</code> irá verificar como você pode ver na imagem o valor, então mesmo que seja de tipos diferentes caso o valor for o mesmo irá retornar true. Agora o <code>===</code> irá verificar se literalmente tudo é igual desde valor a tipo recebido, por isso ali retorna false, porque o valor é igual, mas o tipo é diferente.</p>
+    <h3>Operadores lógicos:</h3>
+    <ul>
+        <li><code>!</code> &rarr; negação</li>
+        <li><code>&&</code> &rarr; conjunção</li>
+        <li><code>||</code> &rarr; disjunção</li>
+    </ul>
+    <h3>Ordem de procedência dos operadores:</h3>
+    <ol>
+        <li>Operadores aritiméticos</li>
+        <li>Operadores relacionais</li>
+        <li>Operadores lógicos:</li>
+        <ol>
+            <li>Negação</li>
+            <li>Conjunção</li>
+            <li>Disjunção</li>
+        </ol>
+    </ol>
+    <h3>Operador ternario:</h3>
+    <ul>
+        <li><code>teste ? true: false</code> &rarr; basicamente é tipo um if.</li>
+    </ul>
+    </section>
+    <footer></footer>
+</body>
+</html>

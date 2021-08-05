@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Html-Favicon</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Html</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div> 
+    <h2 id="titu">Favicon</h2>
+    <section>
+        <p>Pra colocar favicon é bem simples, porém ele é utilizado no <code>&lt;head&gt;</code> ao invés do <code>&lt;body&gt;</code> porque é uma configuração, como você pode ver neste site tem favicon(ícone de favorito no lado do título da página)</p>
+        <h3>Como colocar:</h3>
+        <div id="cent">
+            <picture>
+                <source media="(max-width: 815px)" srcset="imagens/tuto-favicon-p.png" type="image/png">
+                <img src="imagens/tuto-favicon.png" alt="imagem-fazer-favicon">
+            </picture>
+        </div>
+        <ol type="A">
+            <li><code>&lt;link&gt;</code> Tag utilizada para favicon e etc...</li>
+            <li><code>rel="..."</code> Parâmetro que guarda o que é o documento</li>
+            <li><code>href="..."</code> Parâmetro onde é guardado o documento(favicon)</li>
+            <li><code>type="..."</code> Parâmetro que guarda o tipo de imagem</li>
+        </ol>
+        <hr>
+        <p>Como você viu é bem simples, mas o favicon utiliza uma terminação diferente das imagens padrão, eles utilizam a terminação <strong>.ico</strong><br>Tem alguns sites por ai que você pode enviar uma imagem e o site irá te gerar um zip, e nesse zip vai ter o seu favicon.ico</p>
+    </section>
+</body>
+</html>

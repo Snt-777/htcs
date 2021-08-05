@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Css-cores</title>
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Css</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div> 
+    <h2 id="titu">Cores</h2>
+    <section>
+        <p>Começando a falar de Css3, eu não vou entrar na parte de design, porque esse site é focado em dar as informações de como utilizar as tecnologias, ainda sim irei passar alguns links de sites que irão ajudar no desenvolvimento site.<br>Essa parte de Css é um pouco complexa, então terei que explicar algumas coisas.</p>
+        <h3>Métodos para utilizar cores:</h3>
+        <p>No css temos varias formas de utilizar as cores no site, dentre elas <strong>você pode simplesmente utilizar o nome delas, rgb, hexadecimal</strong>. Tem algumas outras formas também, mas eu irei mostrar essa porque são as mais utilizadas, lembrando que se você estiver em um editor de código, dependendo de qual você estiver utilizando, irá aparecer uma opção onde dá pra modificar a cor sem necessáriamente mexes no código dela, no caso será automático. </p>
+        <h4>Escrito:</h4>
+        <p>Dentre os métodos, o escrito é o mais fácil de entender, é basicamente o nome da cor em inglês, você pode simplesmente por yellow, blue, red, etc...</p>
+        <h4>Rgb:</h4>
+        <p>Se você ler o termo <strong>rgb</strong> na forma literal seria: red green blue. <br>Basicamente esse sistema é utilizado em dispositivos eletrônicos com imagem: celulares, monitores, tvs, etc... Utilizando: <br><br> <strong>rgb(0, 0, 255)</strong></p>
+        <div style="background-color: rgb(0, 0, 255); width: 93px; height: 10px;"></div>
+        <p>Se você seguir a lógica, o primeiro 0 ali é o red(vermelho), o segundo 0 é o green(verde) e o 255 é o blue(azul).<br>Como funciona isso? simples, os valores variam entre 0 e 255, a partir disso você consegue basicamente cria qualquer cor que você queira, lembrando da mistura entre red, green e blue</p>
+        <h4>Hexadecimal:</h4>
+        <p>O HEX já é um pouco diferente, mas funciona da mesma forma, se você seguir a lógica do rgb irá entender facilmente o HEX:<br><br><strong>#0000ff</strong></p>
+        <div style="background-color: #0000ff; width: 93px; height: 10px;"></div>
+        <p>O HEX segue (como eu já disse antes) a mesma lógica que rgb, no entanto, a forma dele passar o valor é diferente, sendo o 0 como o menor valor e f como o maior. <br> Sim é um pouco complicado o de entender, mas os são representados em red green e blue também, sendo: <strong>#00(red)00(green)ff(blue)</strong> e os valores seguem nessa ordem: <strong>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</strong>sendo assim, 01 &lt; 11 &lt; 1A &lt; 1F &lt; 2F &lt; FF</p>
+        <h4>Lembrete:</h4>
+        <p>Todos esses códigos devem ser usados na parte style junto com outros comandos como por exemplo: <strong>background-color: #0000ff</strong></p>
+        <h4>links para fazer a paleta de cores do seu site:</h4>
+            <div style="text-align: center;"><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external">Adobe color</a>
+            <a href="https://coolors.co/" target="_blank" rel="external"> Coolors </a></div>
+    </section>
+
+</body>
+</html>
