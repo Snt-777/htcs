@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Html-Vídeos</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Html</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div>
+    <h2 id="titu">Vídeos</h2>
+    <section>
+        <a href="../10-audios/audios.html" rel="next"><button id="op">Áudios</button></a>
+        <p>Para colocar vídeos no seu site é bem simples mesmo, mas nós temos duas opções, incorporar os vídeos ou hospedar no próprio site, hospedar no próprio site pode levar ao consumo maior dos dados do site, já que varias pessoas visitarão ele e verão o vídeo, o ideal é incorporar, mas temos desvantagem nisso, quando a gente incorpora o vídeo geralmente é do youtube ou vimeo, o youtube é um serviço gratuito mas pode aparecer propagandas e indicar vídeos de concorrentes, já o vimeo é um serviço pago e você consegue customizar o vídeo que irá ser incorporado e também não tem anúncios.</p><p>Aqui eu não irei falar o melhor site, apenas mostrar como incorporar o vídeo ou fazer a própria hospedagem.</p>
+        <h3>Incorporando o vídeo:</h3>        
+        
+        <div style="text-align: center;">
+            <iframe width="300" height="168.75" src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" style="border-radius: 10px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <p>Para incorporar o vídeo que você queira é bem simples:</p>
+        <ol>
+            <li>Primeiramente escolha o vídeo.</li>
+            <li>Escolha a opção incorporar.</li>
+            <div id="cent">
+                <picture>
+                    <source media="(max-width: 422px)" srcset="imagens/incorporarpasso1P.png" type="image/png">
+                    <img src="imagens/incorporarpasso1.png" alt="incorporando vídeos passo 1">
+                </picture>
+</div>
+
+            <li>Assim que você apertar o botão de incorporar irá aparecer está janela logo abaixo, você pode customizar quando o vídeo começa, os controles e etc... basta apertar em copiar.</li>
+            <div id="cent">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="imagens/incorporarpasso2P.png" type="image/png">
+                    <img src="imagens/incorporarpasso2.png" alt="incorporando vídeos passo 2">
+                </picture>
+               
+            </div>
+
+            <li>Depois só colar na parte onde você queira do seu código, se você quiser, poder customizar ele ao seu gosto Ex: mudar o width(largura), height(altura), borda e etc...</li>
+            <div id="cent">
+                <picture>
+                    <source media="(max-width: 450px)" srcset="imagens/incorporarpasso3P.png" type="image/png">
+                    <img src="imagens/incorporarpasso3.png" alt="incorporando vídeos passo 3"> 
+                </picture>
+            </div>
+        </ol>
+        <hr>
+        <h3>Hospedando vídeo no site:</h3>
+        <p>Apesar de pouco utilizado, saber hospedar um vídeo no próprio site é bem importante, quanto mais conteúdo melhor.</p><p>Para hospedar um vídeo no site é relativamente simples, mas ainda temos aquela questão de sempre a compatibilidade, ela é bem importante, porque dependendo do tipo do arquivo o navegador do cliente não irá abrir(lembrando o navegador do cliente nem sempre é mesmo que o seu).</p><p>Obviamente temos vários e vários tipos de arquivo, mas se fôssemos colocar todos os tipos de arquivo ficaria imprático, então para resolver esse problema, vamos colocar os tipos mais populares e aceitados nos navegadores mais populares, vou colocar uma lista dos navegadores e os tipos aceitados:</p>
+        <ul>
+            <li>Microsoft Edge &rarr; .mp4 .m4v</li>
+            <li>Apple Safari &rarr; .mp4 .m4v</li>
+            <li>Google Chrome &rarr; .mp4 .m4v .webm .ogv</li>
+            <li>Mozilla Firefox &rarr; .webm .ogv </li>
+            <li>Opera &rarr; .webm .ogv</li>
+        </ul>
+        <p>Para colocar hospedar o vídeo no próprio site é até que bem simples:</p>
+        <div id="cent">
+            <picture>
+                <source media="(max-width: 400px)" srcset="imagens/hospedandovideosnositePP.png" type="image/png">
+                <source media="(max-width: 750px)" srcset="imagens/hospedandovideosnositeP.png" type="image/png">
+                <img src="imagens/hospedandovideosnositeG.png" alt="hospedando vídeo no próprio site">
+            </picture>
+        </div>
+        <ol type="A">
+            <li>Essa é a tag responsável pelo vídeo.</li>
+            <li>Esse parâmetro determina a largura do vídeo, no caso vai regular a altura automaticamente também</li>
+            <li>Esse parâmetro serve para definir uma capa para o vídeo, no caso o idal é fazer uma capa com o mesmo tamanho que o vídeo se não fica desproporcional</li>
+            <li>Esse parâmetro é bem importante, ele faz aparecer os controles do vídeo(áudio, play, fullscreen, etc...), mas também tem outros que você pode testar: <strong>autoplay, loop</strong>, esse nomes já são bem auto explicativos, mas o loop repete o vídeo quando acaba e o autoplay inicia o vídeo automaticamente.</li>
+            <li>Esses são os vídeos em diferentes formatos, basicamente coloquei os mais utilizados, um jeito fácil de conseguir o vídeo de diversor formatos é utilizando uma ferramenta chamada <a href="https://convertio.co/" target="_blank" rel="external">convertio</a>, lá você consegue converter o formato do vídeo, imagens e até áudios, eles tem extensão no Google Chrome, vale a pena dar uma conferida lá.</li>
+            <li>Está é uma mensagem caso o usuário use um navegador não compatível aos formatos de vídeo(apesar de bem raro pode ocorrer).</li>
+            <li>Extra: tem um parâmetro importante que você pode adicionar, ele é o <strong>preload=""</strong> nele você pode escolher de qual forma o vídeo vai carregar, aqui vai uma lista com os modos possíveis:</li>
+            <ul type="disc">
+                <li><strong>auto</strong>&rarr; Ele carrega o vídeo inteiro automaticamente, eu não recomendo muito, porque dependendo do tamanho do vídeo isso pode consumir banda do site atoa(já que o usuário não é obrigado a assistir o vídeo) e também pode prejudicar o carregamento do site.</li>
+                <li><strong>metadata</strong>&rarr; Esse carrega apenas as informações como tempo de vídeo e thumb, só irá carregar o vídeo com o clicar do usuário.</li>
+                <li><strong>none</strong>&rarr; Esse daqui já não carrega nada, só carregará o vídeo com o clicar do usuário.</li>
+            </ul>
+        </ol>
+    </section>
+</body>
+</html>

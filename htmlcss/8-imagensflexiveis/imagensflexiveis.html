@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Html-Imagens flexíveis</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo Html</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div>
+    <h2 id="titu">Imagens flexíveis</h2>
+    <section>
+        <p>Imagens flexíveis servem para dar mais compatibilidade ao site, lembrando que seu site pode ser acessado hoje em dia por até televisões, ou seja quanto mais compatível melhor, as imagens por sí só fazem parte dessa compatibilidade, porque tanto faz o dispositivo que o cliente entrar vai ter uma imagem com o tamanho ideal para cada dispositivo.</p>
+        <p>Para fazer uma imagem flexível precisaremos utilizar 3 tags: <strong>picture, source e img</strong> </p><p>Vou explicar rapidamente como funciona as imagens flexíveis: basicamente eu utilizo o método de aparecer primeiramente a maior imagem, caso a tela for menor que o tamanho da imagem irá carregar uma imagem menor e assim sucessivamente.</p> 
+        <p>Caso você esteja em um pc, teste expandir a janela do seu navegador ou diminuir, você vai ver que está imagem logo abaixo aumenta e diminui dependendo do tamanho da sua tela(no seu caso janela).</p>
+        <div id="cent">
+            <picture>
+                <source media="(max-width: 550px)" srcset="imagens/html5iconP.png" type="image/png">
+                <source media="(max-width: 750px)" srcset="imagens/html5iconM.png" type="image/png">
+                <img src="imagens/html5iconG.png" alt="html 5 icon G">
+            </picture>
+        </div>
+        <div id="cent">
+            <picture>
+                <source media="(max-width: 460px)" srcset="imagens/tutorialimagemflexp.png" type="image/png">
+                <source media="(max-width: 845px)" srcset="imagens/tutorialimagemflexm.png" type="image/png">
+                <img src="imagens/tutorialimagemflex.png" alt="">
+            </picture>
+        </div>
+        <ol type="A">
+            <li>Essa é a tag que utilizaremos para fazer a imagem flexível.</li>
+            <li>Essa é a primeira imagem, no caso a maior.</li>
+            <li>Esse é o primeiro source, ele que irá substituir a imagem quando ela chegar no tamanho limite estabelecido.</li>
+            <li>Este é o terceiro e ultimo source, que irá substituir o outro source quando a imagem chegar ao limite estabelecido dnv, se eu quiser poderia colocar vários sources, mas seria trabalhoso e desnecessário.</li>
+            <li>Essa é o tamanho esse é o tamanho que eu estabeleci, se você parar para ler ele traduzindo fica: largura maxima: 750px, ou seja se q largura da tela for 750px, a imagem será trocada por uma menor que 700px que no caso será uma de 500px, e isso se repete no source logo acima.</li>
+            <li>Esse é o arquivo no qual substituirá a imagem que ficou grande demais.</li>
+            <li><strong>Extra:</strong> Eu esqueci de colocar, mas esse type que fica no source está mostrando que tipo de arquivo é, porque o source não é utilizado apenas para imagens, também é utilizado pra áudios e vídeos, por isso é importante quando utilizar uma imagem colocar <strong>image/png ou image/jpeg</strong> que em geral são os modelos mais utilizados.</li>
+        </ol>
+    </section>
+</body>
+</html>
