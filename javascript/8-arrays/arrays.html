@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript-Arrays</title>
+    <link rel="shortcut icon" href="../../fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1 id="navbar">Aprendendo JavaScript</h1>
+    </header>
+    <div id="navbar">
+        <a href="../../index.html"><button id="home">Home</button></a>
+    </div>
+    <h2 id="titu">Arrays</h2>
+    <section>
+        <p>Ao contrário do que muitos dizem, o array não é tão complicado assim, observe o array como se fosse uma simples lista, e nessa lista o primeiro valor é 0 e assim por diante, mas o array tem alguns comandos próprios que precisam ser mencionados.</p>
+<pre>
+<code>
+<strong>
+  code:
+        
+  let num = [4, 7, 8, 9]
+        
+    for(let c in num){
+        console.log(num[c])
+    }
+        
+  output:
+        
+    4
+    7
+    8
+    9
+</strong>
+</code>
+</pre>
+            <p>Vou começar pelo início, o let está declarando uma variável e essa variável é o nosso array também conhecido como vetor, o array é declarado com um par de colchetes, dentro deles está nossos elementos e cada elemento tem seu índice, o índice identifica o elemento, o índice começa do 0 e vai até o fim do array, como você pode ver esse array tem 4 elementos sendo eles &rarr; 4, 7, 8, 9 &larr; logo o índice será &rarr; 0, 1, 2, 3 &larr; sendo: 4 = 0 ; 7 = 1 ; 8 = 2 ; 9 = 3. <br> Logo em seguida temos esse for, mas se você prestar atenção esse for é diferente do for mostrado na parte de repetições, isso porque esse for é voltado para arrays, então ele basicamente vai contar a variavel c que é equivalente a 0 até o fim do array utilizando o índice como base, então o console.log(num[c]) o c está especificando qual elemento ele vai querer do num. <br> É bem simples a coisa que dificulta são os loops</p>
+            <h3>Comandos utilizados no array:</h3>
+            <ul>
+                <li><code><strong>num.push(5)</strong></code> &rarr; irá adicionar ao final do array um elemento, neste caso o número 5</li>
+                <li><code><strong>num.length</strong></code> &rarr; irá contar a quantidade de elementos dentro do array(esse comando não utiliza parênteses)</li>
+                <li><code><strong>num.sort()</strong></code> &rarr; irá ordenar os valores de formar crescente dentro do array, mas caso um número seja adicionado depois, ele não irá entrar organizado.</li>
+                <li><code><strong>num.indexOf(8)</strong> &rarr; irá procurar o elemento dentro do array, caso tenha irá retornar seu índice, caso não exista o elemento irá retornar o valor <strong>-1</strong></code></li>
+                <li><code><strong>list.splice(0, 1)</strong> &rarr; irá remover o item da lista, nesse caso o 0 significa o índice do elemento a ser removido e o 1 significa a quantidade elementos que serão removidos depois desse índice que serão removidos, por exemplo se eu colocase no lugar de 1 &rarr; 2 basicamente iria remover o elemento do índice 0 e o elemento do índice 1, mas como o número é 1 irá remover apenas o elemento do índice 0</code></li>
+                <ul type="square">
+                    <li><code><strong>list.splice(num.indexOf(0), 1)</strong> &rarr; basicamente nesse método basta colocar o elemento utilizando o index que você pode remove-lo sem saber o índice.</code></li>
+                </ul>
+            </ul>
+    </section>
+    <footer></footer>
+</body>
+</html>
