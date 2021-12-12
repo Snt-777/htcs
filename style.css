@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+@font-face {
+    font-family: 'Pressstart';
+    src: url(csspuro/fontes/fontes/PressStart2P-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    background-image: linear-gradient(150deg, #6C05F6,  #0581F6);
+    color: white;
+    height: 140px;
+    line-height: 70px;
+}
+h1#navbar{
+    margin: 0;
+    margin-left: 30px;
+}
+body{
+    margin: 0;
+    background-color: #0D0630;
+}
+section{
+    max-width: 700px;
+    font: normal 15px Arial;
+    text-align: justify;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
+    
+}
+button#op{
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 60px;
+    border-color: #0D0630;
+    border-radius: 10px;
+}
+div#but{
+    margin: auto;
+    text-align: center;
+}
+h2#cat{
+    color: white;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+button#home{
+    font-size: large;
+    margin: 0;
+    margin-left: 30px;
+    height: 30px;
+    border-radius: 7px;
+    border-style: none;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-style: italic;
+    text-decoration-line: underline;
+}
+div#navbar{
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0) 35%);
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+h2#titu{
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+div#cent{
+    text-align: center;
+    margin: 15px;
+}
+section#code{
+    width: 280px
+}
+img{
+    border-radius: 15px;
+}
+li{
+    margin: 15px;
+}
+h2#cat{
+    text-align: center;
+}
+#op:hover{
+    text-decoration: underline;
+}
